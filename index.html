@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three little pigs</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+<img id="brick" src="assests/Brick.png">
+<img id="straw" src="assests/straw.jpeg">
+<img id="sticks" src="assests/sticks.jpeg">
+<img id="sky" src="assests/sky.jpg">       
+<img id="grass" src="assests/grass.jpg">
+<img id="fire"   src="assests/fire.jpg">
+
+</a-assets>
+<a-sky
+    src="#sky">
+</a-sky>
+<!--house 1-->
+<a-box
+position="-15 1 -15"
+rotation="0 40 0"
+width="8"
+height="4"
+scale=""
+depth=".3"
+side="double"
+src="#straw"
+shadow>
+<a-box
+position="4 0 4"
+width="8"
+height="4"
+rotation="0 90 180"
+scale=""
+depth=".3"
+side="double"
+src="#straw"
+shadow></a-box>
+<a-box
+position="-4 0 4"
+width="8"
+height="4"
+rotation="0 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#straw"
+shadow></a-box>
+<a-box
+    position="-2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#straw"
+    shadow></a-box>
+    <a-box
+    position="2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#straw"
+    shadow></a-box>
+    <a-box
+    position="0 1.5 8.1"
+    height="1"
+    depth=".3"
+    scale="1.038 1 1"
+    width="8"
+    src="#straw"
+    repeat="1 .5"
+    shadow></a-box>
+    
+<!--roof-->
+<a-triangle
+    position="0 3 8.2"
+    scale="8.3 2 1"
+    src="#straw"
+    side="double"
+    shadow>
+</a-triangle>
+<a-triangle
+    position="0 3 0"
+    scale="8.3 2 1"
+    src="#straw"
+    side="double"
+    shadow>
+</a-triangle>
+<a-box
+position="-2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="-65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#straw"
+shadow></a-box>
+<a-box
+position="2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#straw"
+shadow></a-box>
+</a-box>
+
+<!--house 2-->
+<a-box
+position="0 1 -20"
+width="8"
+height="4"
+scale=""
+depth=".3"
+side="double"
+src="#sticks"
+shadow>
+<a-box
+position="4 0 4"
+width="8"
+height="4"
+rotation="0 90 180"
+scale=""
+depth=".3"
+side="double"
+src="#sticks"
+shadow></a-box>
+<a-box
+position="-4 0 4"
+width="8"
+height="4"
+rotation="0 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#sticks"
+shadow></a-box>
+<a-box
+    position="-2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#sticks"
+    shadow></a-box>
+    <a-box
+    position="2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#sticks"
+    shadow></a-box>
+    <a-box
+    position="0 1.5 8.1"
+    height="1"
+    depth=".3"
+    scale="1.038 1 1"
+    width="8"
+    src="#sticks"
+    repeat="1 .5"
+    shadow></a-box>
+<!--roof-->
+<a-triangle
+    position="0 3 8.2"
+    scale="8.3 2 1"
+    src="#sticks"
+    side="double"
+    shadow>
+</a-triangle>
+<a-triangle
+    position="0 3 0"
+    scale="8.3 2 1"
+    src="#sticks"
+    side="double"
+    shadow>
+</a-triangle>
+<a-box
+position="-2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="-65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#sticks"
+shadow></a-box>
+<a-box
+position="2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#sticks"
+shadow></a-box>
+</a-box>
+
+<!--house 3-->
+<a-box
+position="15 1 -15"
+rotation="0 -40 0"
+width="8"
+height="4"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow>
+<a-box
+position="4 0 4"
+width="8"
+height="4"
+rotation="0 90 180"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow></a-box>
+<a-box
+position="-4 0 4"
+width="8"
+height="4"
+rotation="0 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow></a-box>
+<a-box
+    position="-2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#brick"
+    shadow></a-box>
+    <a-box
+    position="2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#brick"
+    shadow></a-box>
+    <a-box
+    position="0 1.5 8.1"
+    height="1"
+    depth=".3"
+    scale="1.038 1 1"
+    width="8"
+    src="#brick"
+    repeat="1 .5"
+    shadow></a-box>
+<!--roof-->
+<a-triangle
+    position="0 3 8.2"
+    scale="8.3 2 1"
+    src="#brick"
+    side="double"
+    shadow>
+</a-triangle>
+<a-triangle
+    position="0 3 0"
+    scale="8.3 2 1"
+    src="#brick"
+    side="double"
+    shadow>
+</a-triangle>
+<a-box
+position="-2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="-65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow></a-box>
+<a-box
+position="2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow></a-box>
+<a-box
+position="2 4.7 4"
+width="2"
+height="4.5"
+src="#brick"
+shadow></a-box>
+<a-box
+position="2.5 -.5 .7"
+width="3"
+height="3"
+src="#brick"
+shadow>
+</a-box>
+<a-box
+position="-2.5 -.5 .7"
+width="3"
+height="3"
+src="#brick"
+shadow>
+</a-box>
+<a-box
+position="0 1.5 .7"
+width="8"
+height="1"
+color="black"
+shadow>
+</a-box>
+<a-box
+position="0 -.5 .7"
+width="2"
+height="3"
+src="#fire"
+shadow>
+</a-box>
+</a-box>
+<a-plane
+width="25"
+rotation="90 0 0"
+position="1 -1.5 -9"
+scale="3 3 2"
+height="10"
+src="#grass"
+side="double"></a-plane>
+    </a-scene>
+</body>
+</html>
